@@ -51,15 +51,6 @@ function calculate(calc) {
     }
 }
 
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
     var testNumLength = function (number) {
         if (number.length > 9) {
@@ -96,7 +87,7 @@ $(document).ready(function () {
     $("#equals").click(function () {
         newnumber += number;
         number = calculate(parseCalculationString(newnumber));
-        
+
         totaldiv.text(number);
         testNumLength(number);
      
