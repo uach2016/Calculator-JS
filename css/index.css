@@ -72,7 +72,8 @@ body, div, button {
     height: 123px !important;
 }
 #point{
-	top: 64px;
+	top: 0;
+    right: -78px;
 }
 h3{
 	position: absolute;
