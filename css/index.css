@@ -1,13 +1,14 @@
-body, div, a {
+body, div, button {
     padding:0;
     margin:0;
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 #calculator {
-	background-color: #999;
-	width: 310px;
-	height: 460px;
+	 background-color: #dfd8d0;
+    box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+	width: 342px;
+	height: 531px;
 	border: 3px black solid;
 	margin: 10px auto;
 	padding: 5px;
@@ -15,17 +16,15 @@ body, div, a {
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 10px;
+	position: relative;
 }
 
-#calculator a {
+#calculator button {
 	display: block;
     float: left;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
-    background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDEDED', endColorstr='#DCDCDC');
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
@@ -34,32 +33,50 @@ body, div, a {
 }
 
 #numbers, #operators {
-	margin: auto;	
+	width: fit-content;	
+	position: relative;
 }
 
-#operators a {
-	width: 45px;
-	height: 45px;
-	font-size: 39px;
-	padding: 2px;
-	margin: 5px 6px;
+
+
+#numbers{
+	position: absolute;
+    top: 65%;
+    left: 38%;
+	transform: translate(-50%, -50%);
 }
 
-#numbers a {
-	width: 50px;
-	height: 50px;
-	font-size: 32px;
-	padding: 10px;
-	margin: 5px 15px;
+#operators button,
+#numbers button {
+	width: 77px;
+    height: 60px;
+    font-size: 32px;
+    margin: 2px 2px;
 }
 
 #total {
     height: 70px;
-    width: 300px;
     margin:auto;
     background-color:white;
     margin-bottom: 5px;
     text-align: right;
     font-size: 60px;
-    padding: 0px 5px;
+}
+
+#point,
+#equals{
+	position: absolute;
+    margin-right: auto !important;
+    right: 0;
+    top: 193px;
+    height: 123px !important;
+}
+#point{
+	top: 64px;
+}
+h3{
+	position: absolute;
+    bottom: 7px;
+    left: 43%;
+    transform: translate(-43%, 0);
 }

@@ -13,12 +13,12 @@ $(document).ready(function () {
     var operator = "";
     var totaldiv = $("#total");
     totaldiv.text("0");
-    $("#numbers a").not("#clear,#clearall").click(function () {
+    $("#numbers button").not("#clear,#clearall").click(function () {
         number += $(this).text();
         totaldiv.text(number);
         testNumLength(number);
     });
-    $("#operators a").not("#equals").click(function () {
+    $("#operators button").not("#equals").click(function () {
         operator = $(this).text();
         newnumber = number;
         number = "";
